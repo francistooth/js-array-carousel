@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.nodeco {
+    text-decoration: none;
+}
+
+/* static layout */
+
 .static {
     width: 50vw;
     height: 50vh;
@@ -11,6 +17,58 @@
 }
 
 .carouselImg {
+    height: 70vh;
+}
+
+/* container */
+
+.row {
+    height: 100vh;
+}
+
+.col {
+    width: 40vw;
+    height: 50vh;
+}
+
+/* single item */
+
+.item {
     width: 100%;
     height: 100%;
+    display: none; 
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active {
+    display: block;
+}
+
+/* anchors */
+
+.prev, .next {
+    position: absolute;
+    left: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.prev {
+    top: 0;
+}
+
+.next {
+    bottom: 0;
 }
